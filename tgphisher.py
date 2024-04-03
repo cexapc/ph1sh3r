@@ -15,49 +15,52 @@ bold = Style.BRIGHT
 
 def create_sv():
     try:
-    # Попытка запуска через "python"
+        # Попытка запуска через "python"
         subprocess.run(["python", 'sv.py'])
     except Exception:
         try:
-        # Попытка запуска через "python3"
+            # Попытка запуска через "python3"
             subprocess.run(["python3", 'sv.py'])
         except Exception:
             print("     запустить скрипт не удалось.")
+
 def create_eyeofgod():
     try:
-    # Попытка запуска через "python"
+        # Попытка запуска через "python"
         subprocess.run(["python", 'eog.py'])
     except Exception:
         try:
-        # Попытка запуска через "python3"
+            # Попытка запуска через "python3"
             subprocess.run(["python3", 'eog.py'])
         except Exception:
             print("     запустить скрипт не удалось.")
+
 def create_anonchat():
     try:
-    # Попытка запуска через "python"
+        # Попытка запуска через "python"
         subprocess.run(["python", 'ac.py'])
     except Exception:
         try:
-        # Попытка запуска через "python3"
+            # Попытка запуска через "python3"
             subprocess.run(["python3", 'ac.py'])
         except Exception:
             print("     запустить скрипт не удалось.")
+
 import os
 
 def display_banner():
     os.system('cls' if os.name == 'nt' else 'clear')  # Очистка экрана
 
     menu = f"""{red}
-     _____
+     _
 < validka >
  ---------
     \
      \
-                                   .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+                                  .::!!!!!!!:.
+  .!!!!!:.                       .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:          .:!!!!!!XUWW$$$$$$$$$P
       $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
       $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
       ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
@@ -88,5 +91,6 @@ def main():
             break
         else:
             print("Неверный выбор!")
-if __name__ == "__main__":
+
+if __name__ == "main":
     main()
