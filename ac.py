@@ -1,4 +1,3 @@
-# By Luka
 import telebot
 import sys
 from telebot import types
