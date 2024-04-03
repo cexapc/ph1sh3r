@@ -67,9 +67,8 @@ def display_banner():
                     {yellow}1{reset} - {cyan}z glaz boga
                     {yellow}2{reset} - {cyan}z anon chat
                     {yellow}3{reset} - {cyan}z nakrut
-                    {yellow}0{reset} - {cyan}exxit
-
-    """
+                    {yellow}0{reset} - {cyan}exxit 
+                    """
     print(menu)
 
 def main():
