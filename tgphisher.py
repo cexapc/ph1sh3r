@@ -62,8 +62,7 @@ def display_banner():
       $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
       ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
         "*$bd$$$$      '*$$$$$$$$$$$o+#"
-             """"          """""""
-                                           ddrobil                           
+             """"          """""""             ddrobil                           
 
                     {yellow}1{reset} - {cyan}z glaz boga
                     {yellow}2{reset} - {cyan}z anon chat
