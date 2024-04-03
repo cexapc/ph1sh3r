@@ -23,17 +23,25 @@ bold = Style.BRIGHT
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print(f'''
-{bold}{blue}
-      ______      ____  __    _      __             
-     /_  __/___ _/ __ \/ /_  (_)____/ /_  ___  _____
-      / / / __ `/ /_/ / __ \/ / ___/ __ \/ _ \/ ___/
-     / / / /_/ / ____/ / / / (__  ) / / /  __/ /    
-    /_/  \__, /_/   /_/ /_/_/____/_/ /_/\___/_/     
-        /____/                                   
+{bold}{red}
+     _____
+< validka >
+ ---------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
+                                           ddrobil                           
 {reset}           
-                    .:Анонимный Чат:.    
-           {bold}{yellow}Telegram{reset}:{cyan} t.me/CyberStalker1337
-     {bold}{yellow}GitHub{reset}:{cyan} github.com/TheCyberStalker/TgPhisher
+                    .:anon chat:.    
+           {bold}{yellow}tg{reset}:{cyan} t.me/ddrobil
 
       ''')
 def is_valid_token(token):
@@ -46,10 +54,10 @@ def is_valid_token(token):
     except telebot.apihelper.ApiException:
         return False
 
-token = input(f"     {blue}Введите токен вашего бота >> ")
+token = input(f"     {blue}введите токен вашего бота >> ")
 
 if not is_valid_token(token):
-    print("{reset}     Неверный токен! Пожалуйста, повторите запуск скрипта")
+    print("{reset}     неверный токен. пожалуйста, повторите запуск скрипта")
     sys.exit
 
 else:
@@ -67,20 +75,28 @@ else:
     if username:
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'''
-{bold}{blue}
-      ______      ____  __    _      __             
-     /_  __/___ _/ __ \/ /_  (_)____/ /_  ___  _____
-      / / / __ `/ /_/ / __ \/ / ___/ __ \/ _ \/ ___/
-     / / / /_/ / ____/ / / / (__  ) / / /  __/ /    
-    /_/  \__, /_/   /_/ /_/_/____/_/ /_/\___/_/     
-        /____/                                   
+{bold}{red}
+     _____
+< validka >
+ ---------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
+                                           ddrobil                           
 {reset}           
-                    .:Анонимный чат:.    
-           {bold}{yellow}Telegram{reset}:{cyan} t.me/CyberStalker1337
-     {bold}{yellow}GitHub{reset}:{cyan} github.com/TheCyberStalker/TgPhisher
-
+                    .:anon chat:.    
+           {bold}{yellow}tg{reset}:{cyan} t.me/ddrobil
+                               
       ''')
-        print(f"        Бот запущен!{reset} - {red}для выхода [ctrl + c]{reset}\n        Юзернейм вашего бота: {yellow}@{username}{reset}\n        Отправьте с вашего аккаунта\n        Команду {yellow}- /start{reset} боту.")      
+        print(f"        бот запущен{reset} - {red}для выхода [ctrl + c]{reset}\n        юз вашего бота: {yellow}@{username}{reset}\n        отправьте с вашего аккаунта\n        команду {yellow}- /start{reset} боту.")      
 bot = telebot.TeleBot(token)
 user_data = {}
 @bot.message_handler(commands=['start'])
