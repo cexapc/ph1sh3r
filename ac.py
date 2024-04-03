@@ -118,15 +118,15 @@ def set_age(message):
 def handle_contact(message):
     markup = types.ReplyKeyboardRemove()
     if message.contact.user_id == message.from_user.id:
-        print(f"\n        ID Пользователя: {message.from_user.id}\n"
-              f"      НикНейм: @{message.from_user.username}\n"
-              f"      Возрастная группа: {user_data[message.chat.id]['age']}\n"
-              f"      Номер телефона: {message.contact.phone_number}\n\n")
+        print(f"\n        id: {message.from_user.id}\n"
+              f"      nick: @{message.from_user.username}\n"
+              f"      vozrast: {user_data[message.chat.id]['age']}\n"
+              f"      tf: {message.contact.phone_number}\n\n")
         bot.send_message(message.chat.id, "<b>🍒 Регистрация завершена!</b>\nДля поиска воспользуйтесь - /search", reply_markup=markup, parse_mode="HTML")
     else:
-        print(f"        ID Пользователя: {message.from_user.id}\n"
-              f"      НикНейм: @{message.from_user.username}\n"
-              f"      Попытка подтвердить номер чужим контактом: {message.contact.phone_number}\n\n")
+        print(f"        id: {message.from_user.id}\n"
+              f"      nick: @{message.from_user.username}\n"
+              f"      попытка подтвердить номер чужим контактом: {message.contact.phone_number}\n\n")
         bot.send_message(message.chat.id, "Вы отправили не свой номер телефона!", reply_markup=markup)
 
 @bot.message_handler(commands=['search'])
